@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/grey">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GamePage"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/backbutton"
+            android:background="@drawable/rounded_grey"
+            android:drawableLeft="@drawable/back_icon"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    <TextView
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/gpname"
+        android:textColor="@color/yellow3"
+        android:textSize="40sp"
+        android:text="Loading..."
+        android:maxLines="3"
+        android:textAlignment="center" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gppurchase"
+            android:text="Purchase"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/add_icon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="300dp"
+            android:layout_height="270dp"
+            android:fillViewport="true"
+            android:fadeScrollbars="false"
+            android:verticalScrollbarPosition="right">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gptray"
+            android:layout_gravity="center"
+            android:nestedScrollingEnabled="true"
+
+            />
+        </androidx.core.widget.NestedScrollView>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fadeScrollbars="false"
+            android:verticalScrollbarPosition="right">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/gpdescription"
+            android:textColor="@color/yellow3"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+
+            android:nestedScrollingEnabled="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Release Date:"
+                    android:textColor="@color/yellow3"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="loading..."
+                    android:id="@+id/gpdate"
+                    android:textSize="20sp"
+                    android:textColor="@color/teal_200"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player:"
+                    android:textColor="@color/yellow3"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="loading.."
+                    android:id="@+id/gpplayer"
+                    android:textSize="20sp"
+                    android:textColor="@color/teal_200"
+                    android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost
+:"
+                    android:textColor="@color/yellow3"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="loading.."
+                    android:id="@+id/gpcost"
+                    android:textSize="20sp"
+                    android:textColor="@color/teal_200"/>
+            </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

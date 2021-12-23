@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="64dp"
+        android:text="name"
+        android:textColor="@color/yellow1"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ppic"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/see2" />
+
+    <TextView
+        android:id="@+id/pemail"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="116dp"
+        android:text="email"
+        android:textColor="@color/yellow1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pphone"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="176dp"
+        android:text="Phone"
+        android:textColor="@color/yellow1"
+        android:textSize="20sp" />
+
+</RelativeLayout>

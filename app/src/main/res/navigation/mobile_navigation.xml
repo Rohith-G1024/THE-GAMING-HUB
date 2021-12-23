@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.android.androidproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.android.androidproject.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/actionFragment"
+        android:name="com.android.androidproject.ActionFragment"
+        android:label="Action"
+        tools:layout="@layout/action_fragment" />
+    <fragment
+        android:id="@+id/adventureFragment"
+        android:name="com.android.androidproject.AdventureFragment"
+        android:label="Adventure"
+        tools:layout="@layout/fragment_adventure" />
+    <fragment
+        android:id="@+id/casualFragment"
+        android:name="com.android.androidproject.CasualFragment"
+        android:label="Casual"
+        tools:layout="@layout/fragment_casual" />
+    <fragment
+        android:id="@+id/indieFragment"
+        android:name="com.android.androidproject.IndieFragment"
+        android:label="Indie"
+        tools:layout="@layout/fragment_indie" />
+    <fragment
+        android:id="@+id/racingFragment"
+        android:name="com.android.androidproject.RacingFragment"
+        android:label="Racing"
+        tools:layout="@layout/fragment_racing" />
+    <fragment
+        android:id="@+id/rpgFragment"
+        android:name="com.android.androidproject.RpgFragment"
+        android:label="RPG"
+        tools:layout="@layout/fragment_rpg" />
+    <fragment
+        android:id="@+id/simulationFragment"
+        android:name="com.android.androidproject.SimulationFragment"
+        android:label="Simulation"
+        tools:layout="@layout/fragment_simulation" />
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.android.androidproject.SportsFragment"
+        android:label="Sports"
+        tools:layout="@layout/fragment_sports" />
+    <fragment
+        android:id="@+id/strategyFragment"
+        android:name="com.android.androidproject.StrategyFragment"
+        android:label="Strategy"
+        tools:layout="@layout/fragment_strategy" />
+    <fragment
+        android:id="@+id/topsellersFragment"
+        android:name="com.android.androidproject.TopsellersFragment"
+        android:label="Top Sellers"
+        tools:layout="@layout/fragment_topsellers" />
+</navigation>

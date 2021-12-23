@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+
+    <item android:title="Categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/actionFragment"
+                    android:title="Action"
+                    android:icon="@drawable/ic_baseline_action"/>
+                <item
+                    android:id="@+id/adventureFragment"
+                    android:title="Adventure"
+                    android:icon="@drawable/adventure"/>
+
+                <item
+                    android:id="@+id/casualFragment"
+                    android:title="Casual"
+                    android:icon="@drawable/ic_baseline_casual"/>
+                    <item
+                    android:id="@+id/indieFragment"
+                    android:title="Indie"
+                    android:icon="@drawable/ic_baseline_indie"/>
+                    <item
+                    android:id="@+id/rpgFragment"
+                    android:title="RPG"
+                    android:icon="@drawable/rpg"/>
+                    <item
+                    android:id="@+id/racingFragment"
+                    android:title="Racing"
+                    android:icon="@drawable/racing"/>
+                    <item
+                    android:id="@+id/simulationFragment"
+                    android:title="Simulation"
+                    android:icon="@drawable/simulation"/>
+                    <item
+                    android:id="@+id/sportsFragment"
+                    android:title="Sports"
+                    android:icon="@drawable/sports"/>
+                    <item
+                    android:id="@+id/strategyFragment"
+                    android:title="Strategy"
+                    android:icon="@drawable/strategy"/>
+                    <item
+                    android:id="@+id/topsellersFragment"
+                    android:title="Top Sellers"
+                    android:icon="@drawable/topsellers"/>
+
+            </group>
+        </menu>
+    </item>
+    </group>
+    <item android:title="Actions">
+        <menu>
+            <item android:id="@+id/logoutbar"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

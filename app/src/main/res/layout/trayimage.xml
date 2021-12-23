@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview"
+        android:layout_width="280dp"
+        android:layout_height="135dp"
+        card_view:contentPadding="8dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="8dp"
+        card_view:cardBackgroundColor="@color/black"
+        android:layout_margin="1dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/traypic"
+            android:src="@mipmap/game_preview"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
