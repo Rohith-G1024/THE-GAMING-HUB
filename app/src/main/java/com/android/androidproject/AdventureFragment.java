@@ -16,7 +16,6 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
 
-
 public class AdventureFragment extends Fragment {
 
 
