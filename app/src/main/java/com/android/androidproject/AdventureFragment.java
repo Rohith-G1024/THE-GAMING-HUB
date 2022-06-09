@@ -62,6 +62,7 @@ public class AdventureFragment extends Fragment {
 
         return root;
     }
+    
 
 
     @Override
