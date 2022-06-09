@@ -62,8 +62,7 @@ public class AdventureFragment extends Fragment {
 
         return root;
     }
-    
-
+   
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
